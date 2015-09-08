@@ -10,6 +10,8 @@ var globalShortcut = require('global-shortcut');
 var mainWindow = null;
 var settingsWindow = null;
 
+// test
+
 function registerAccellerators() {
     globalShortcut.unregisterAll();
 
