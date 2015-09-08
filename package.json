@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "main": "./main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-linux": "electron-packager ./build SoundMachine --out ./build/ --version 0.31.2 --icon=./app/img/app-icon.png",
+    "package-w64": "electron-packager ./build SoundMachine platform=win32 --arch=x64 --out ./build/ --version 0.31.2 --icon=./app/img/app-icon.png"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.30.3"
+    "electron-packager": "^5.0.2",
+    "electron-prebuilt": "^0.30.3",
+    "grunt": "^0.4.5",
+    "npmlog": "^1.2.1"
+  },
+  "dependencies": {
+    "nconf": "^0.7.2"
   }
 }
